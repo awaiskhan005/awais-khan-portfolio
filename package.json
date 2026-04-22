@@ -1,0 +1,12 @@
+{
+  "name": "awais-khan-portfolio",
+  "version": "1.0.0",
+  "description": "Awais Khan — Data Scientist & AI Developer portfolio",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "start": "npx serve . --listen 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
