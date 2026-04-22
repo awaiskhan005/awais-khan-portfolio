@@ -372,7 +372,7 @@ function PortraitPlaceholder({ tall = false }) {
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', background: '#1a1713' }}>
       <img
-        src="/awais.jpg"
+        src="/awais.png"
         alt="Awais Khan"
         style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
       />
