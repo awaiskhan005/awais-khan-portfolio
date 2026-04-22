@@ -367,31 +367,15 @@ function HeroPortrait() {
   );
 }
 
-/* ---- Portrait placeholder — abstract SVG avatar ---- */
+/* ---- Portrait — real photo ---- */
 function PortraitPlaceholder({ tall = false }) {
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', background: 'linear-gradient(180deg, #D9C9A8 0%, #B49774 100%)', overflow: 'hidden' }}>
-      <svg viewBox="0 0 220 280" preserveAspectRatio="xMidYMid slice" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-        <defs>
-          <linearGradient id="akSkin" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8A5E3A" />
-            <stop offset="1" stopColor="#5A3A22" />
-          </linearGradient>
-          <linearGradient id="akBg" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#D9C9A8" />
-            <stop offset="1" stopColor="#9B7A53" />
-          </linearGradient>
-        </defs>
-        <rect width="220" height="280" fill="url(#akBg)" />
-        <path d="M30 280 Q40 200 82 186 L138 186 Q180 200 190 280 Z" fill="#1A1713" />
-        <path d="M92 186 L110 206 L128 186 Z" fill="#2C2620" />
-        <rect x="96" y="162" width="28" height="30" fill="url(#akSkin)" />
-        <ellipse cx="110" cy="120" rx="42" ry="52" fill="url(#akSkin)" />
-        <path d="M68 118 Q70 72 110 70 Q150 72 152 118 Q150 98 140 90 Q130 84 110 84 Q90 84 82 90 Q72 98 68 118 Z" fill="#0F0B07" />
-        <path d="M80 142 Q85 170 110 172 Q135 170 140 142 Q135 160 110 162 Q85 160 80 142 Z" fill="#0F0B07" opacity="0.7" />
-        <ellipse cx="96" cy="108" rx="8" ry="14" fill="#ffffff18" />
-      </svg>
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 20%, #ffffff20, transparent 60%)', mixBlendMode: 'overlay' }} />
+    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', background: '#1a1713' }}>
+      <img
+        src="/awais.jpg"
+        alt="Awais Khan"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
+      />
     </div>
   );
 }
